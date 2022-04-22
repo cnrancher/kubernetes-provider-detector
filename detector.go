@@ -26,6 +26,8 @@ func init() {
 	allProviders[providers.RKE] = providers.IsRKE
 	allProviders[providers.RKE_WINDOWS] = providers.IsRKEWindows
 	allProviders[providers.RKE2] = providers.IsRKE2
+	// Pandaria
+	allProviders[providers.ACK] = providers.IsACK
 }
 
 // DetectProvider accepts a k8s interface and checks all registered providers for a match
